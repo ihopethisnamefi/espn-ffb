@@ -1,1 +1,1 @@
-web python3 -m espn_ffb.app -e prod
+web: python3 -m espn_ffb.app -e prod
