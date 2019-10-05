@@ -5,7 +5,7 @@ def get_db_uri(user, password, host, port, dbname):
 
 
 class Config(object):
-    LEAGUE_ID = 123456
+    LEAGUE_ID = 164548
     CURRENT_YEAR = 2019
     DB_URI = ""
     COOKIES = {
@@ -26,11 +26,11 @@ class Config(object):
 class DevConfig(Config):
     config_dir = "conf"
 
-    user = "your_dev_user"
-    password = "your_dev_pw"
+    user = "postgres"
+    password = "admin"
     host = "localhost"
     port = "5432"
-    dbname = "your_dev_db"
+    dbname = "postgres"
 
     log_base_dir = "log"
     # console_level = 10
@@ -41,11 +41,11 @@ class DevConfig(Config):
 class ProdConfig(Config):
     config_dir = "/etc/opt/espn-ffb"
 
-    user = "your_prod_user"
-    password = "your_prod_pw"
+    user = "postgres"
+    password = "admin"
     host = "localhost"
     port = "5432"
-    dbname = "your_prod_db"
+    dbname = "postgres"
 
     log_base_dir = "/var/log/espn-ffb"
 
