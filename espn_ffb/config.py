@@ -1,5 +1,8 @@
+import os
+
 def get_db_uri(user, password, host, port, dbname):
-    return f"postgresql://{user}:{password}@{host}:{port}/{dbname}"
+    return os.environ['DATABASE_URL']
+    # return f"postgresql://{user}:{password}@{host}:{port}/{dbname}"
     # return f"mysql://{user}:{password}@{host}:{port}/{dbname}"
     # return f"oracle://{user}:{password}@{host}:{port}/{dbname}"
 
@@ -41,11 +44,11 @@ class DevConfig(Config):
 class ProdConfig(Config):
     config_dir = "/etc/opt/espn-ffb"
 
-    user = "postgres"
-    password = "admin"
-    host = "localhost"
+    user = "vpfxqfdqqmchgl"
+    password = "844256f2e546ad6814d91edafc39ced2cecbf6d5821f4fa5514267d93b53727f"
+    host = "ec2-174-129-238-192.compute-1.amazonaws.com"
     port = "5432"
-    dbname = "postgres"
+    dbname = "da0c5aboorfhi9"
 
     log_base_dir = "/var/log/espn-ffb"
 
