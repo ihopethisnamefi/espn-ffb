@@ -17,6 +17,7 @@ from espn_ffb.views.standings import standings
 from flask import Flask, redirect
 import logging
 import sys
+import os from pml
 
 LOG_FORMAT = "%(asctime)s %(levelname)s %(pathname)s %(lineno)d: %(message)s"
 
@@ -58,4 +59,4 @@ def show_index():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 33507)))
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
