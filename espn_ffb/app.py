@@ -17,7 +17,7 @@ from espn_ffb.views.standings import standings
 from flask import Flask, redirect
 import logging
 import sys
-from pml import os
+import os
 
 LOG_FORMAT = "%(asctime)s %(levelname)s %(pathname)s %(lineno)d: %(message)s"
 
