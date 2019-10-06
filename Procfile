@@ -1,1 +1,1 @@
-worker: python3 -m espn_ffb.setup -e prod & python3 -m espn_ffb.app -e prod wait -n
+web: python3 -m espn_ffb.setup -e prod & python3 -m espn_ffb.app -e prod wait -n
