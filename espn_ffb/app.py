@@ -55,7 +55,7 @@ def setup_logging():
 
 @app.route('/', methods=['GET'])
 def show_index():
-    return redirect("/awards", code=302)
+    return redirect("/standings/overall", code=302)
 
 
 if __name__ == "__main__":

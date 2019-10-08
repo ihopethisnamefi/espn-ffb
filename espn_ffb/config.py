@@ -50,6 +50,6 @@ class ProdConfig(Config):
     port = "5432"
     dbname = "da0c5aboorfhi9"
 
-    log_base_dir = "/var/log/espn-ffb"
+    # log_base_dir = "/var/log/espn-ffb"
 
     DB_URI = get_db_uri(user=user, password=password, host=host, port=port, dbname=dbname)
